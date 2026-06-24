@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio K & A | Cosmética Capilar Premium</title>
+    <!-- Importación de Google Fonts para máxima elegancia tipográfica -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..400;1,100&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
     <style>
-        /* --- ESTILOS GENERALES Y PALETA DE COLORES --- */
+        /* --- PALETA DE COLORES ELEGANTE Y MODERNA --- */
         :root {
             --blanco-puro: #ffffff;
-            --fondo-crema: #faf8f6;
-            --oro-rosa: #e5b3b3;
-            --oro-premium: #d4af37;
-            --texto-oscuro: #2a2a2a;
-            --texto-suave: #666666;
+            --fondo-sutil: #fafafa;       
+            --verde-esmeralda: #113322;    
+            --oro-premium: #c5a059;       
+            --texto-oscuro: #222222;
+            --texto-suave: #5c5c5c;
             --borde-fino: #eaeaea;
         }
 
@@ -20,17 +25,17 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
         }
 
         body {
-            background-color: var(--fondo-crema);
+            background-color: var(--fondo-sutil);
             color: var(--texto-oscuro);
             line-height: 1.6;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .container {
-            width: 90%;
+            width: 95%;
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -53,25 +58,27 @@
         }
 
         .nav-logo {
-            font-weight: bold;
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 600;
             font-size: 1.4rem;
-            letter-spacing: 3px;
-            color: var(--texto-oscuro);
+            letter-spacing: 4px;
+            color: var(--verde-esmeralda);
             text-decoration: none;
         }
 
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 25px;
+            gap: 20px;
         }
 
         .nav-links a {
             text-decoration: none;
             color: var(--texto-suave);
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            font-weight: 300;
             transition: color 0.3s ease;
         }
 
@@ -82,53 +89,60 @@
         /* --- SECCIÓN PRINCIPAL (HERO) --- */
         #hero {
             background-color: var(--blanco-puro);
-            padding: 100px 0 80px 0;
+            padding: 70px 0;
             text-align: center;
             border-bottom: 1px solid var(--borde-fino);
         }
 
         .hero-logo-img {
-            max-width: 220px;
+            max-width: 320px; 
             height: auto;
-            margin-bottom: 25px;
-            border-radius: 50%;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            border: none;
+            background: transparent;
         }
 
         #hero h1 {
-            font-size: 2.8rem;
-            font-weight: 300;
-            letter-spacing: 4px;
-            margin-bottom: 15px;
+            font-family: 'Playfair Display', 'Didot', Georgia, serif;
+            font-size: 3rem;
+            font-weight: 400;
+            letter-spacing: 6px;
+            margin-bottom: 12px;
             text-transform: uppercase;
+            color: var(--verde-esmeralda);
         }
 
         .slogan {
-            font-size: 1.2rem;
-            font-style: italic;
-            color: var(--texto-suave);
-            letter-spacing: 1px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: var(--oro-premium);
+            letter-spacing: 5px; 
+            margin-top: 5px;
         }
 
-        /* --- BLOQUES DE CONTENIDO --- */
+        /* --- SECCIONES --- */
         section {
-            padding: 80px 0;
+            padding: 60px 0;
         }
 
         .section-title {
             text-align: center;
+            font-family: 'Playfair Display', serif;
             font-size: 2rem;
-            font-weight: 300;
+            font-weight: 400;
             letter-spacing: 3px;
             text-transform: uppercase;
-            margin-bottom: 50px;
+            margin-bottom: 40px;
             position: relative;
+            color: var(--verde-esmeralda);
         }
 
         .section-title::after {
             content: '';
             display: block;
-            width: 50px;
+            width: 40px;
             height: 1px;
             background-color: var(--oro-premium);
             margin: 15px auto 0 auto;
@@ -137,27 +151,35 @@
         /* --- CULTURA ORGANIZACIONAL (COC) --- */
         .grid-coc {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
         }
 
         .card-coc {
             background-color: var(--blanco-puro);
-            padding: 40px;
+            padding: 35px;
             border-radius: 4px;
             border: 1px solid var(--borde-fino);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
             text-align: center;
         }
 
         .card-coc h3 {
+            font-family: 'Playfair Display', serif;
             font-size: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: var(--texto-oscuro);
+            color: var(--verde-esmeralda);
             margin-bottom: 20px;
             border-bottom: 1px solid var(--borde-fino);
             padding-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .card-coc p {
+            font-weight: 300;
+            font-size: 0.95rem;
+            color: var(--texto-suave);
         }
 
         .valores-list {
@@ -170,11 +192,14 @@
             margin-bottom: 10px;
             position: relative;
             padding-left: 20px;
+            font-size: 0.95rem;
+            font-weight: 300;
+            color: var(--texto-suave);
         }
 
         .valores-list li::before {
             content: '✦';
-            color: var(--oro-rosa);
+            color: var(--oro-premium);
             position: absolute;
             left: 0;
         }
@@ -182,35 +207,168 @@
         /* --- MODELO DE EMPRESA --- */
         .modelo-box {
             background-color: var(--blanco-puro);
-            padding: 50px;
+            padding: 40px;
             border-radius: 4px;
-            border-left: 4px solid var(--oro-premium);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            border-left: 4px solid var(--verde-esmeralda);
+            border-top: 1px solid var(--borde-fino);
+            border-right: 1px solid var(--borde-fino);
+            border-bottom: 1px solid var(--borde-fino);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
         }
 
         .modelo-box h3 {
-            font-size: 1.5rem;
-            letter-spacing: 1px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            letter-spacing: 2px;
             margin-bottom: 15px;
+            text-transform: uppercase;
+            color: var(--verde-esmeralda);
         }
 
-        /* --- ORGANIGRAMA --- */
-        .organigrama-container {
+        .modelo-box p {
+            font-weight: 300;
+            font-size: 0.95rem;
+            color: var(--texto-suave);
+        }
+
+        /* --- APARTADO INTEGRADO DEL PDF --- */
+        .documento-wrapper {
             background-color: var(--blanco-puro);
             padding: 30px;
             border-radius: 4px;
             border: 1px solid var(--borde-fino);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
             text-align: center;
         }
-
-        .organigrama-img {
-            max-width: 100%;
-            height: auto;
+        
+        .documento-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* Relación 16:9 */
+            margin-bottom: 20px;
             border: 1px solid var(--borde-fino);
             border-radius: 4px;
         }
+        
+        .documento-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
 
-        /* --- FUNDADORA (CV) --- */
+        .btn-premium {
+            display: inline-block;
+            background-color: var(--verde-esmeralda);
+            color: var(--blanco-puro);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 4px;
+            border: 1px solid var(--oro-premium);
+            transition: all 0.3s ease;
+        }
+
+        .btn-premium:hover {
+            background-color: var(--blanco-puro);
+            color: var(--verde-esmeralda);
+        }
+
+        /* --- ESTRUCTURA DEL ORGANIGRAMA EN HTML --- */
+        .organigrama-html {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            background-color: var(--blanco-puro);
+            padding: 40px 20px;
+            border-radius: 4px;
+            border: 1px solid var(--borde-fino);
+            overflow-x: auto;
+        }
+
+        .org-node {
+            background-color: var(--verde-esmeralda);
+            color: var(--blanco-puro);
+            padding: 12px 25px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border: 1px solid var(--oro-premium);
+        }
+
+        .org-node.sub {
+            background-color: var(--blanco-puro);
+            color: var(--texto-oscuro);
+            border: 1px solid var(--oro-premium);
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .org-line-v {
+            width: 2px;
+            height: 20px;
+            background-color: var(--oro-premium);
+        }
+
+        .org-departments-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+            width: 100%;
+            margin-top: 10px;
+            min-width: 900px;
+        }
+
+        .org-column {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background-color: var(--fondo-sutil);
+            padding: 15px 10px;
+            border-radius: 4px;
+            border: 1px solid var(--borde-fino);
+        }
+
+        .org-col-title {
+            font-size: 0.75rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: var(--blanco-puro);
+            background-color: var(--verde-esmeralda);
+            padding: 6px;
+            border-radius: 2px;
+            text-align: center;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid var(--oro-premium);
+        }
+
+        .org-leaf {
+            background-color: var(--blanco-puro);
+            border: 1px solid var(--borde-fino);
+            padding: 8px 10px;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            color: var(--texto-oscuro);
+            text-align: center;
+            font-weight: 300;
+        }
+
+        /* --- SECCIÓN FUNDADORA --- */
         .cv-flex {
             display: flex;
             background-color: var(--blanco-puro);
@@ -221,41 +379,47 @@
         }
 
         .cv-sidebar {
-            background-color: #222;
+            background-color: var(--verde-esmeralda);
             color: var(--blanco-puro);
             padding: 40px;
             flex: 1;
         }
 
         .cv-sidebar h3 {
-            font-size: 1.8rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
             letter-spacing: 2px;
             margin-bottom: 5px;
-            color: var(--oro-rosa);
+            color: var(--oro-premium);
+            font-weight: 400;
         }
 
         .cv-sidebar .puesto {
-            font-size: 1rem;
-            color: #aaa;
+            font-size: 0.8rem;
+            color: #d1dfd8;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             margin-bottom: 30px;
+            font-weight: 300;
         }
 
         .cv-section-title {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 2px;
             color: var(--oro-premium);
             margin-bottom: 15px;
             margin-top: 25px;
-            border-bottom: 1px solid #444;
+            border-bottom: 1px solid #1f4d38;
             padding-bottom: 5px;
+            font-weight: 400;
         }
 
-        .cv-sidebar p, .cv-sidebar ul {
-            font-size: 0.9rem;
-            color: #ccc;
+        .cv-sidebar p {
+            font-size: 0.85rem;
+            color: #e2ede8;
+            font-weight: 300;
+            margin-bottom: 5px;
         }
 
         .cv-main {
@@ -268,30 +432,109 @@
         }
 
         .cv-item h4 {
-            font-size: 1.1rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--verde-esmeralda);
+            font-weight: 400;
+        }
+
+        .cv-item h5 {
+            font-size: 1rem;
+            font-weight: 400;
             color: var(--texto-oscuro);
         }
 
-        .cv-item .fecha {
+        .cv-main p {
+            font-weight: 300;
+            font-size: 0.95rem;
+            color: var(--texto-suave);
+        }
+
+        /* --- APARTADO: FORMULARIO CURRICULUM VITAE --- */
+        .cv-form-container {
+            background-color: var(--blanco-puro);
+            padding: 40px;
+            border-radius: 4px;
+            border: 1px solid var(--borde-fino);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--texto-oscuro);
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+
+        .form-group input, 
+        .form-group textarea, 
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--borde-fino);
+            border-radius: 4px;
+            background-color: var(--fondo-sutil);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            color: var(--texto-oscuro);
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus, 
+        .form-group textarea:focus, 
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--oro-premium);
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            background-color: var(--verde-esmeralda);
+            color: var(--blanco-puro);
+            border: 1px solid var(--oro-premium);
+            padding: 14px;
+            text-transform: uppercase;
             font-size: 0.85rem;
-            color: var(--oro-premium);
-            font-weight: bold;
-            margin-bottom: 5px;
+            letter-spacing: 2px;
+            font-weight: 400;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: var(--blanco-puro);
+            color: var(--verde-esmeralda);
         }
 
         /* --- FOOTER --- */
         footer {
-            background-color: #1a1a1a;
-            color: #888;
-            padding: 40px 0;
+            background-color: var(--verde-esmeralda);
+            color: #b3cbbf;
+            padding: 35px 0;
             text-align: center;
-            font-size: 0.85rem;
-            border-top: 1px solid #2a2a2a;
-            letter-spacing: 1px;
+            font-size: 0.8rem;
+            border-top: 1px solid var(--oro-premium);
+            letter-spacing: 2px;
+            font-weight: 300;
         }
 
         footer strong {
+            font-family: 'Playfair Display', serif;
             color: var(--blanco-puro);
+            font-weight: 400;
+            letter-spacing: 1px;
         }
 
         /* --- RESPONSIVE --- */
@@ -306,32 +549,39 @@
             #hero h1 {
                 font-size: 2rem;
             }
+            .documento-container {
+                padding-top: 100%;
+            }
         }
     </style>
 </head>
 <body>
 
+    <!-- NAVEGACIÓN -->
     <header>
         <nav class="container">
             <a href="#" class="nav-logo">ESTUDIO K & A</a>
             <ul class="nav-links">
                 <li><a href="#hero">Inicio</a></li>
                 <li><a href="#coc">Cultura Corporativa</a></li>
-                <li><a href="#modelo">Modelo</a></li>
+                <li><a href="#documento">Documentación</a></li>
                 <li><a href="#organigrama">Organigrama</a></li>
                 <li><a href="#direccion">Dirección</a></li>
+                <li><a href="#cv-envio">Enviar CV</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- INICIO (HERO) -->
     <section id="hero">
         <div class="container">
-            <img src="Logo x2.jpeg" alt="Logo Estudio K & A" class="hero-logo-img">
+            <img src="logo.png" alt="Logo Estudio K & A" class="hero-logo-img">
             <h1>Estudio K & A</h1>
-            <p class="slogan">"Ciencia y botánica unidas para la excelencia del cuidado capilar premium"</p>
+            <p class="slogan">Tu cabello, tu mejor accesorio</p>
         </div>
     </section>
 
+    <!-- CULTURA ORGANIZACIONAL (COC) -->
     <section id="coc">
         <div class="container">
             <h2 class="section-title">Cultura Organizacional Corporativa (COC)</h2>
@@ -339,21 +589,20 @@
                 
                 <div class="card-coc">
                     <h3>Misión</h3>
-                    <p>Ofrecer soluciones capilares de la más alta calidad mediante la fusión de rigurosa investigación científica e ingredientes botánicos premium, asegurando la salud, brillo y vitalidad del cabello de nuestros clientes de forma transparente y sostenible.</p>
+                    <p>Brindar soluciones de alta gama en salud y estética capilar a través de formulaciones técnicas transparentes y servicios de alta costura, garantizando el bienestar integral y la satisfacción de nuestros clientes mediante la innovación y la responsabilidad profesional.</p>
                 </div>
 
                 <div class="card-coc">
                     <h3>Visión</h3>
-                    <p>Ser la marca líder y referente en cosmética capilar premium a nivel regional, reconocida por nuestra innovación científica, estética minimalista y el compromiso inquebrantable con el bienestar y la excelencia en el servicio al cliente.</p>
+                    <p>Ser la empresa líder y referente en el mercado de cuidado capilar premium en la zona oriental y a nivel nacional, reconocida por nuestra rigurosidad científica, un modelo organizativo eficiente y una estética corporativa minimalista y sofisticada.</p>
                 </div>
 
                 <div class="card-coc">
-                    <h3>Valores Colectivos</h3>
+                    <h3>Valores ABC</h3>
                     <ul class="valores-list">
-                        <li><strong>Excelencia:</strong> Calidad óptima en cada fórmula.</li>
-                        <li><strong>Transparencia:</strong> Honestidad en componentes y procesos.</li>
-                        <li><strong>Innovación:</strong> Evolución científica constante.</li>
-                        <li><strong>Bienestar:</strong> Cuidado real y respetuoso de la salud.</li>
+                        <li><strong>A - Autenticidad:</strong> Transparencia absoluta en nuestras fórmulas y procesos.</li>
+                        <li><strong>B - Bienestar:</strong> Priorización de la salud integral del cabello y cuero cabelludo.</li>
+                        <li><strong>C - Calidad:</strong> Rigor técnico, atención al detalle y búsqueda constante de la perfección.</li>
                     </ul>
                 </div>
 
@@ -361,73 +610,122 @@
         </div>
     </section>
 
-    <section id="modelo" style="background-color: var(--blanco-puro);">
+    <!-- APARTADO: DOCUMENTACIÓN OFICIAL INTEGRADA -->
+    <section id="documento" style="background-color: var(--blanco-puro);">
+        <div class="container">
+            <h2 class="section-title">Manual Organizacional Institucional</h2>
+            <div class="documento-wrapper">
+                <div class="documento-container">
+                    <!-- ENLACE CORREGIDO EN MODO PREVIEW -->
+                    <iframe src="https://drive.google.com/file/d/10lyOO9jR0r-iYagaG99JM9aH27oBtT8K/preview" allow="autoplay"></iframe>
+                </div>
+                <!-- ENLACE CORREGIDO EN MODO COMPARTIR -->
+                <a href="https://drive.google.com/file/d/10lyOO9jR0r-iYagaG99JM9aH27oBtT8K/view?usp=sharing" target="_blank" class="btn-premium">Abrir en Google Drive</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODELO DE EMPRESA -->
+    <section id="modelo">
         <div class="container">
             <h2 class="section-title">Modelo de Empresa</h2>
             <div class="modelo-box">
-                <h3>Modelo de Negocio: Cosmética Capilar Premium (B2C / Venta Directa)</h3>
-                <p><strong>Justificación:</strong> Estudio K & A opera bajo un modelo estructurado de comercialización de productos exclusivos. Su justificación técnica y comercial se fundamenta en la alta demanda de tratamientos capilares libres de químicos agresivos y enriquecidos con activos botánicos validados en laboratorio. El enfoque corporativo busca cubrir el nicho de mercado de cuidado selectivo, combinando una identidad visual limpia (minimalista) con una rigurosa planificación financiera y cumplimiento legal, asegurando rentabilidad y posicionamiento de alto standing.</p>
+                <h3>Modelo de Negocio: Cosmética Capilar Premium (Comerciante Individual)</h3>
+                <p><strong>Justificación:</strong> Estudio K & A opera bajo un modelo estructurado de comercialización de productos exclusivos. Su justificación técnica y comercial se fundamenta en la alta demanda de tratamientos capilares libres de químicos agresivos y enriquecidos con activos botánicos validados en laboratorio. El enfoque corporativo busca cubrir el nicho de mercado de cuidado selectivo, combinando una identidad visual limpia con una rigurosa planificación financiera y cumplimiento legal bajo la figura legal de Comerciante Individual, asegurando rentabilidad y posicionamiento de alto standing.</p>
             </div>
         </div>
     </section>
 
+    <!-- ORGANIGRAMA -->
     <section id="organigrama">
         <div class="container">
             <h2 class="section-title">Estructura Organizacional</h2>
-            <div class="organigrama-container">
-                <img src="ORGANIGRAMA DE MI EMPRESA.jpg" alt="Organigrama Corporativo de Estudio K & A" class="organigrama-img">
+            
+            <div class="organigrama-html">
+                <div class="org-node">Dirección General / Comerciante Individual</div>
+                <div class="org-line-v"></div>
+                
+                <div class="org-node sub">Gerente de Operaciones</div>
+                <div class="org-line-v"></div>
+                
+                <div class="org-departments-grid">
+                    
+                    <div class="org-column">
+                        <div class="org-col-title">I + D y Producción</div>
+                        <div class="org-leaf">Químico Formulador</div>
+                        <div class="org-leaf">Técnico Control de Calidad</div>
+                        <div class="org-leaf">Operario de Planta</div>
+                        <div class="org-leaf">Diseñador de Empaque</div>
+                    </div>
+
+                    <div class="org-column">
+                        <div class="org-col-title">Marketing</div>
+                        <div class="org-leaf">Brand Manager</div>
+                        <div class="org-leaf">Marketing Influencers</div>
+                        <div class="org-leaf">Tricólogo Experto</div>
+                        <div class="org-leaf">Copywriter / Redactor</div>
+                    </div>
+
+                    <div class="org-column">
+                        <div class="org-col-title">Logística y Suministros</div>
+                        <div class="org-leaf">Gerente de Cadena</div>
+                        <div class="org-leaf">Compras Materia Prima</div>
+                        <div class="org-leaf">Operaria de Almacén</div>
+                    </div>
+
+                    <div class="org-column">
+                        <div class="org-col-title">Ventas Presenciales</div>
+                        <div class="org-leaf">Store Manager</div>
+                        <div class="org-leaf">Estilista Educador</div>
+                        <div class="org-leaf">Ejecutivo Salones B2B</div>
+                        <div class="org-leaf">Promotor de Punto Venta</div>
+                    </div>
+
+                    <div class="org-column">
+                        <div class="org-col-title">Administración y Legal</div>
+                        <div class="org-leaf">Delegado Administrativo</div>
+                        <div class="org-leaf">Asesoría Legal / Apoderado</div>
+                        <div class="org-leaf">Atención Digital / Soporte</div>
+                    </div>
+
+                </div>
             </div>
+
         </div>
     </section>
 
+    <!-- DIRECCIÓN GENERAL / CURRICULUM -->
     <section id="direccion" style="background-color: var(--blanco-puro);">
         <div class="container">
             <h2 class="section-title">Dirección General</h2>
             
             <div class="cv-flex">
                 <div class="cv-sidebar">
-                    <h3>Paola Flores</h3>
+                    <h3>Ashly Paola Flores García</h3>
                     <div class="puesto">Fundadora & Directora General</div>
                     
                     <div class="cv-section-title">Contacto</div>
-                    <p>📞 7857-8896</p>
-                    <p>📧 @estudiok&a.com</p>
-                    <p>📍 Barrio Las Delicias, Santa Rosa de Lima, La Unión, El Salvador</p>
+                    <p>📍 Santa Rosa de Lima, La Unión, El Salvador</p>
+                    <p>📧 info@estudioka.com</p>
 
                     <div class="cv-section-title">Habilidades Clave</div>
-                    <p>• Planificación estratégica y dirección corporativa.</p>
-                    <p>• Toma de decisiones financieras y presupuestarias.</p>
-                    <p>• Gestión de la identidad corporativa estética.</p>
-                    <p>• Cumplimiento normativo y legal.</p>
+                    <p>• Planificación estratégica corporativa.</p>
+                    <p>• Dirección y toma de decisiones financieras.</p>
+                    <p>• Gestión de la identidad estética de lujo.</p>
+                    <p>• Cumplimiento normativo del Código de Comercio.</p>
                 </div>
 
                 <div class="cv-main">
                     <div class="cv-item" style="margin-bottom: 30px;">
-                        <h4 style="border-bottom: 2px solid var(--oro-rosa); padding-bottom: 5px; text-transform: uppercase; letter-spacing: 1px;">Perfil Profesional</h4>
-                        <p style="margin-top: 10px; color: var(--texto-suave);">Profesional y emprendedora en el sector de la cosmética capilar premium. Fundadora y Directora General de Estudio K & A, con sólida formación en gestión empresarial y contabilidad. Capacidad estratégica para liderar organizaciones, coordinar equipos multidisciplinares (I+D, producción, marketing) y tomar decisiones financieras y comerciales de alto nivel orientadas a la excelencia, la transparencia y el bienestar del cliente.</p>
+                        <h4 style="border-bottom: 2px solid var(--oro-premium); padding-bottom: 5px; text-transform: uppercase; letter-spacing: 1px;">Perfil Profesional</h4>
+                        <p style="margin-top: 10px;">Emprendedora y titular del sector cosmético de alta gama en El Salvador. Fundadora y Representante Legal de Estudio K & A bajo la calidad de Comerciante Individual. Cuenta con capacidades para coordinar células de trabajo multidisciplinares (I+D, producción, marketing e innovación) y liderar la planificación estructural orientada a la excelencia del cuidado capilar.</p>
                     </div>
 
                     <div class="cv-item">
-                        <h4 style="border-bottom: 2px solid var(--oro-rosa); padding-bottom: 5px; text-transform: uppercase; letter-spacing: 1px;">Experiencia Laboral Destacada</h4>
-                        
+                        <h4 style="border-bottom: 2px solid var(--oro-premium); padding-bottom: 5px; text-transform: uppercase; letter-spacing: 1px;">Formación Académica</h4>
                         <div class="cv-item" style="margin-top: 15px;">
-                            <h5>Ejecutiva de Ventas — Walmart El Salvador</h5>
-                            <div class="fecha">2026 - Actualidad</div>
-                            <p style="color: var(--texto-suave);">Atención al cliente personalizada, procesamiento de transacciones comerciales de alto volumen y manejo eficaz de caja.</p>
-                        </div>
-
-                        <div class="cv-item">
-                            <h5>Vendedora de Atención al Cliente — Almacenes Simán</h5>
-                            <div class="fecha">2024 - 2025</div>
-                            <p style="color: var(--texto-suave);">Asesoramiento personalizado exclusivo a clientes y superación constante de objetivos de ventas mensuales.</p>
-                        </div>
-                    </div>
-
-                    <div class="cv-item">
-                        <h4 style="border-bottom: 2px solid var(--oro-rosa); padding-bottom: 5px; text-transform: uppercase; letter-spacing: 1px;">Formación Académica</h4>
-                        <div class="cv-item" style="margin-top: 15px;">
-                            <h5>Bachiller en Contabilidad / Gestión Empresarial</h5>
-                            <p style="color: var(--texto-suave);">Instituto Nacional Profesor Francisco Ventura Zelaya</p>
+                            <h5>Bachillerato Técnico / Gestión Organizacional</h5>
+                            <p>Instituto Nacional Profesor Francisco Ventura Zelaya</p>
                         </div>
                     </div>
                 </div>
@@ -436,10 +734,57 @@
         </div>
     </section>
 
+    <!-- APARTADO NUEVO: FORMULARIO CURRICULUM VITAE PARA RELLENAR -->
+    <section id="cv-envio">
+        <div class="container">
+            <h2 class="section-title">Bolsa de Trabajo / Envía tu CV</h2>
+            
+            <div class="cv-form-container">
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Currículum recibido correctamente en Estudio K & A.');">
+                    
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono de Contacto</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ej. +503 7000-0000" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="area">Área de Interés / Puesto</label>
+                        <select id="area" name="area" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="produccion">I + D / Producción y Laboratorio</option>
+                            <option value="marketing">Marketing y Comunicación Estética</option>
+                            <option value="ventas">Ventas y Relaciones B2B</option>
+                            <option value="administracion">Administración y Soporte Legal</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="perfil">Resumen Profesional (Tu CV)</label>
+                        <textarea id="perfil" name="perfil" rows="6" placeholder="Describe brevemente tu formación académica, experiencia laboral previa y habilidades clave..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Enviar Postulación</button>
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 <strong>Estudio K & A</strong>. Todos los derechos reservados.</p>
-            <p style="font-size: 0.75rem; margin-top: 5px; color: #555;">Diseñado con elegancia y rigor científico para el bienestar capilar.</p>
+            <p>&copy; 2026 <strong>ESTUDIO K & A</strong>. Todos los derechos reservados.</p>
+            <p style="font-size: 0.75rem; margin-top: 5px; color: #b3cbbf; letter-spacing: 1px;">Diseñado con elegancia y rigor científico para el bienestar capilar.</p>
         </div>
     </footer>
 
