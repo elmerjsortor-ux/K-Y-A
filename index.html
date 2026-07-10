@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio K & A | Cosmética Capilar Premium</title>
-    <!-- Importación de Google Fonts para máxima elegancia tipográfica -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..400;1,100&family=Playfair+Display:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
@@ -263,6 +262,7 @@
             border: none;
         }
 
+        /* BOTONES PREMIUM */
         .btn-premium {
             display: inline-block;
             background-color: var(--verde-esmeralda);
@@ -283,7 +283,36 @@
             color: var(--verde-esmeralda);
         }
 
-        /* --- ESTRUCTURA DEL ORGANIGRAMA EN HTML --- */
+        /* ENLACES DISCRETOS PARA CONTRATOS */
+        .contratos-discretos {
+            margin-top: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .btn-discreto {
+            display: inline-block;
+            background: transparent;
+            color: var(--texto-suave);
+            border: 1px solid var(--borde-fino);
+            padding: 8px 18px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-discreto:hover {
+            border-color: var(--oro-premium);
+            color: var(--verde-esmeralda);
+            background-color: var(--blanco-puro);
+        }
+
+        /* --- ORGANIGRAMA EN FORMATO DE COLUMNAS DETALLADO --- */
         .organigrama-html {
             display: flex;
             flex-direction: column;
@@ -330,7 +359,7 @@
             gap: 15px;
             width: 100%;
             margin-top: 10px;
-            min-width: 900px;
+            min-width: 1000px;
         }
 
         .org-column {
@@ -366,14 +395,13 @@
             color: var(--texto-oscuro);
             text-align: center;
             font-weight: 300;
+            line-height: 1.4;
         }
-        
+
         .org-leaf strong {
             color: var(--verde-esmeralda);
-            font-weight: 500;
             display: block;
-            font-size: 0.7rem;
-            text-transform: uppercase;
+            font-size: 0.75rem;
             margin-top: 2px;
         }
 
@@ -513,6 +541,32 @@
             line-height: 1.5;
         }
 
+        /* LISTADO DISCRETO PARA EVALUACIONES */
+        .evaluaciones-lista-discreta {
+            list-style: none;
+            margin-top: 15px;
+            border-top: 1px solid var(--borde-fino);
+            padding-top: 15px;
+            text-align: left;
+        }
+
+        .evaluaciones-lista-discreta li {
+            margin-bottom: 8px;
+        }
+
+        .evaluaciones-lista-discreta a {
+            font-size: 0.8rem;
+            color: var(--oro-premium);
+            text-decoration: none;
+            font-weight: 400;
+            transition: color 0.2s ease;
+        }
+
+        .evaluaciones-lista-discreta a:hover {
+            color: var(--verde-esmeralda);
+            text-decoration: underline;
+        }
+
         /* --- APARTADO: FORMULARIO CURRICULUM VITAE --- */
         .cv-form-container {
             background-color: var(--blanco-puro);
@@ -525,7 +579,7 @@
             text-align: center;
         }
 
-        /* --- NUEVO APARTADO RESULTADOS DE SELECCIÓN --- */
+        /* --- APARTADO RESULTADOS DE SELECCIÓN --- */
         .resultados-box {
             background-color: var(--blanco-puro);
             padding: 40px;
@@ -598,7 +652,6 @@
 </head>
 <body>
 
-    <!-- NAVEGACIÓN -->
     <header>
         <nav class="container">
             <a href="#" class="nav-logo">ESTUDIO K & A</a>
@@ -615,7 +668,6 @@
         </nav>
     </header>
 
-    <!-- INICIO (HERO) -->
     <section id="hero">
         <div class="container">
             <img src="logo.png" alt="Logo Estudio K & A" class="hero-logo-img">
@@ -624,7 +676,6 @@
         </div>
     </section>
 
-    <!-- CULTURA ORGANIZACIONAL (COC) -->
     <section id="coc">
         <div class="container">
             <h2 class="section-title">Cultura Organizacional Corporativa (COC)</h2>
@@ -653,7 +704,6 @@
         </div>
     </section>
 
-    <!-- APARTADO: DOCUMENTACIÓN OFICIAL INTEGRADA -->
     <section id="documento" style="background-color: var(--blanco-puro);">
         <div class="container">
             <h2 class="section-title">Manual Organizacional Institucional</h2>
@@ -662,11 +712,17 @@
                     <iframe src="https://drive.google.com/file/d/10lyOO9jR0r-iYagaG99JM9aH27oBtT8K/preview" allow="autoplay"></iframe>
                 </div>
                 <a href="https://drive.google.com/file/d/10lyOO9jR0r-iYagaG99JM9aH27oBtT8K/view?usp=sharing" target="_blank" class="btn-premium">Abrir en Google Drive</a>
+                
+                <div class="contratos-discretos">
+                    <a href="https://drive.google.com/file/d/110YS7fUjOZ71Pr8rmV55ZisrA0MiOZLF/view?usp=sharing" target="_blank" class="btn-discreto">📄 Contrato Formato A</a>
+                    <a href="https://docs.google.com/document/d/1NbK1QVOOAv7eZ7VxzsdN4RsxP0R09RJJsGk7mSfieSA/edit?usp=sharing" target="_blank" class="btn-discreto">📄 Minuta Laboral</a>
+                    <a href="https://drive.google.com/file/d/1V5F8l9kqY4f51tZZuw00uZwamE-ZhCtH/view?usp=sharing" target="_blank" class="btn-discreto">📄 Contrato Formato B</a>
+                    <a href="https://drive.google.com/file/d/1fdzQH_UegQWzmQjuNuFnqZJys2q2u5Su/view?usp=sharing" target="_blank" class="btn-discreto">📄 Contrato Formato C</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- MODELO DE EMPRESA -->
     <section id="modelo">
         <div class="container">
             <h2 class="section-title">Modelo de Empresa</h2>
@@ -677,7 +733,6 @@
         </div>
     </section>
 
-    <!-- ORGANIGRAMA -->
     <section id="organigrama">
         <div class="container">
             <h2 class="section-title">Estructura Organizacional</h2>
@@ -696,7 +751,7 @@
                     
                     <div class="org-column">
                         <div class="org-col-title">I + D y Producción</div>
-                        <div class="org-leaf">Gerente de Marca <strong>Tania Paola Pichardo Órdoñez</strong></div>
+                        <div class="org-leaf">Gerente de Marca<strong>Tania Paola Pichardo O.</strong></div>
                         <div class="org-leaf">Químico Formulador</div>
                         <div class="org-leaf">Técnico Control de Calidad</div>
                         <div class="org-leaf">Operario de Planta</div>
@@ -704,7 +759,7 @@
 
                     <div class="org-column">
                         <div class="org-col-title">Marketing</div>
-                        <div class="org-leaf">Gerente de Marketing Digital <strong>Hasli Alexandra Ventura Rodríguez</strong></div>
+                        <div class="org-leaf">Gerente Marketing Digital<strong>Hasli Alexandra Ventura R.</strong></div>
                         <div class="org-leaf">Marketing Influencers</div>
                         <div class="org-leaf">Tricólogo Experto</div>
                         <div class="org-leaf">Copywriter / Redactor</div>
@@ -719,7 +774,7 @@
 
                     <div class="org-column">
                         <div class="org-col-title">Ventas Presenciales</div>
-                        <div class="org-leaf">Gerente de Ventas <strong>Madelyn Dayana Benavidez García</strong></div>
+                        <div class="org-leaf">Gerente de Ventas<strong>Madelyn Dayana Benavidez G.</strong></div>
                         <div class="org-leaf">Store Manager</div>
                         <div class="org-leaf">Estilista Educador</div>
                         <div class="org-leaf">Promotor de Punto Venta</div>
@@ -727,7 +782,7 @@
 
                     <div class="org-column">
                         <div class="org-col-title">Administración y Legal</div>
-                        <div class="org-leaf">Atención al Cliente <strong>Ashley Nicole Argueta Pineda</strong></div>
+                        <div class="org-leaf">Atención al Cliente<strong>Ashley Nicole Argueta P.</strong></div>
                         <div class="org-leaf">Delegado Administrativo</div>
                         <div class="org-leaf">Asesoría Legal / Apoderado</div>
                     </div>
@@ -738,7 +793,6 @@
         </div>
     </section>
 
-    <!-- DIRECCIÓN GENERAL / CURRICULUM -->
     <section id="direccion" style="background-color: var(--blanco-puro);">
         <div class="container">
             <h2 class="section-title">Dirección General & Talento Humano</h2>
@@ -783,40 +837,47 @@
         </div>
     </section>
 
-    <!-- INSTRUMENTOS DE RECLUTAMIENTO -->
     <section id="instrumentos">
         <div class="container">
             <h2 class="section-title">Instrumentos de Selección y Reclutamiento</h2>
             <div class="modelo-box" style="margin-bottom: 30px;">
                 <h3>Metodología Corporativa de Contratación</h3>
-                <p>En <strong>Estudio K & A</strong>, el proceso de reclutamiento se ejecuta bajo estándares rigurosos que garantizan que el talento seleccionado comparta nuestra visión de lujo, calidad científica y eficiencia operativa. La combinación de filtros cualitativos y cuantitativos asegura decisiones objetivas fundamentadas en datos técnicos.</p>
+                <p>En <strong>Estudio K & A</strong>, el proceso de reclutamiento se ejecuta bajo estándares rigurosos que garantizan que el talento seleccionado comparta nuestra visión de lujo, calidad científica y eficiencia operativa.</p>
             </div>
             
             <div class="grid-instrumentos">
                 <div class="card-instrumento">
                     <h3>Ejemplo de Entrevista</h3>
-                    <p>Se utiliza como el primer filtro dinámico cara a cara. Consiste en una guía de preguntas estructuradas y basadas en competencias técnicas y habilidades blandas, permitiendo evaluar la fluidez, la alineación estética con la marca y la resolución de problemas en tiempo real.</p>
+                    <p>Se utiliza como el primer filtro dinámico cara a cara. Consiste en una guía de preguntas estructuradas y basadas en competencias técnicas y habilidades blandas.</p>
                 </div>
 
                 <div class="card-instrumento">
                     <h3>Tablas Comparativas de Criterios de Selección</h3>
-                    <p>Este instrumento centraliza y pondera los perfiles de los aspirantes. Permite confrontar los requisitos del puesto con las calificaciones reales de cada candidato, logrando una comparación visual y numérica transparente para mitigar sesgos y elegir con precisión objetiva.</p>
+                    <p>Este instrumento centraliza y pondera los perfiles de los aspirantes. Permite confrontar los requisitos del puesto con las calificaciones reales de cada candidato.</p>
                 </div>
 
                 <div class="card-instrumento">
                     <h3>Formato de Evaluación de Pruebas Psicológicas</h3>
-                    <p>Herramienta diseñada para registrar e interpretar los rasgos de personalidad, adaptabilidad, ética laboral y resistencia al estrés de los postulantes, asegurando un entorno de trabajo saludable y compatible con la cultura corporativa.</p>
+                    <p>Herramienta diseñada para registrar e interpretar los rasgos de personalidad, adaptabilidad, ética laboral y resistencia al estrés de los postulantes.</p>
                 </div>
 
                 <div class="card-instrumento">
-                    <h3>Formatos_Seleccion_Psicometrica.xlsx</h3>
-                    <p>Matriz técnica digitalizada que automatiza los puntajes de las pruebas de inteligencia, aptitud y lógica. Transforma las respuestas psicométricas en gráficos claros, sirviendo de respaldo cuantitativo decisivo a la hora de formalizar la contratación.</p>
+                    <h3>Técnicas de Evaluación (Formatos)</h3>
+                    <p>Matrices y pautas técnicas digitalizadas para la recolección cuantitativa y cualitativa de datos durante el proceso final de selección:</p>
+                    <ul class="evaluaciones-lista-discreta">
+                        <li><a href="https://drive.google.com/file/d/1fvsVetyho3uB3ey7apH44knDWodZc8Fb/view?usp=sharing" target="_blank">→ Formato de Evaluación Técnica I</a></li>
+                        <li><a href="https://drive.google.com/file/d/1qLpXw2G-eiq9g9g3ruSBud-W3qM1m0IR/view?usp=sharing" target="_blank">→ Formato de Evaluación Técnica II</a></li>
+                        <li><a href="https://drive.google.com/file/d/1TD9EOEEinw0dfMjZwM3NpDDFv6vCQVQJ/view?usp=sharing" target="_blank">→ Matriz de Criterios Cualitativos</a></li>
+                        <li><a href="https://drive.google.com/file/d/1GbLIAtnQ1Tle07g2Livd37K0BgIOGNHZ/view?usp=sharing" target="_blank">→ Guía de Entrevista por Competencias</a></li>
+                        <li><a href="https://drive.google.com/file/d/1V7LXBhicFGVvnga9p2BPuQ5YxNtFe2t-/view?usp=sharing" target="_blank">→ Pauta de Evaluación Psicológica</a></li>
+                        <li><a href="https://drive.google.com/file/d/1BIlxXIk9H5Hl49s4Jwo7YL5NbWkT9w_w/view?usp=sharing" target="_blank">→ Control de Puntuación Psicométrica</a></li>
+                        <li><a href="https://drive.google.com/file/d/1p8QirVxW_3oPBe7OO8ysE2uXNDuTnKgs/view?usp=sharing" target="_blank">→ Registro Técnico de Selección Final</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN: FORMULARIO GOOGLE FORMS INTEGRADO -->
     <section id="cv-envio" style="background-color: var(--blanco-puro);">
         <div class="container">
             <h2 class="section-title">Vacantes para ser parte de Estudio K & A</h2>
@@ -832,7 +893,6 @@
         </div>
     </section>
 
-    <!-- NUEVO APARTADO: RESULTADOS DEL PROCESO DE SELECCIÓN -->
     <section id="resultados-seleccion">
         <div class="container">
             <h2 class="section-title">Resultados del Proceso de Selección</h2>
@@ -853,7 +913,6 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
     <footer>
         <div class="container">
             <p>&copy; 2026 <strong>ESTUDIO K & A</strong>. Todos los derechos reservados.</p>
