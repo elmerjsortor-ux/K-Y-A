@@ -405,6 +405,49 @@
             margin-top: 2px;
         }
 
+        /* --- NUEVOS ESTILOS PARA LA PLANILLA DE CONTROL --- */
+        .planilla-wrapper {
+            background-color: var(--blanco-puro);
+            padding: 30px;
+            border-radius: 4px;
+            border: 1px solid var(--borde-fino);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.01);
+            overflow-x: auto;
+        }
+
+        .planilla-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
+            text-align: left;
+            min-width: 900px;
+        }
+
+        .planilla-table th {
+            background-color: var(--verde-esmeralda);
+            color: var(--blanco-puro);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+            padding: 12px 10px;
+            border: 1px solid var(--borde-fino);
+        }
+
+        .planilla-table td {
+            padding: 10px;
+            border: 1px solid var(--borde-fino);
+            color: var(--texto-oscuro);
+            font-weight: 300;
+        }
+
+        .planilla-table tr:nth-child(even) {
+            background-color: var(--fondo-sutil);
+        }
+
+        .planilla-table strong {
+            color: var(--verde-esmeralda);
+        }
+
         /* --- SECCIÓN FUNDADORA --- */
         .cv-flex {
             display: flex;
@@ -660,6 +703,7 @@
                 <li><a href="#coc">Cultura Corporativa</a></li>
                 <li><a href="#documento">Documentación</a></li>
                 <li><a href="#organigrama">Organigrama</a></li>
+                <li><a href="#planilla">Planilla de Control</a></li>
                 <li><a href="#direccion">Dirección</a></li>
                 <li><a href="#instrumentos">Instrumentos</a></li>
                 <li><a href="#cv-envio">Vacantes</a></li>
@@ -750,7 +794,7 @@
                 <div class="org-departments-grid">
                     
                     <div class="org-column">
-                        <div class="org-col-title">I + D y Producción</div>
+                        <div class="org-col-title">I + D y Production</div>
                         <div class="org-leaf">Gerente de Marca<strong>Tania Paola Pichardo O.</strong></div>
                         <div class="org-leaf">Químico Formulador</div>
                         <div class="org-leaf">Técnico Control de Calidad</div>
@@ -793,7 +837,84 @@
         </div>
     </section>
 
-    <section id="direccion" style="background-color: var(--blanco-puro);">
+    <section id="planilla" style="background-color: var(--blanco-puro);">
+        <div class="container">
+            <h2 class="section-title">Planilla de Control de Salarios</h2>
+            <div class="planilla-wrapper">
+                <table class="planilla-table">
+                    <thead>
+                        <tr>
+                            <th>N° Documento Afiliado</th>
+                            <th>Tipo Doc</th>
+                            <th>Institución Previsional</th>
+                            <th>Nombre Completo del Afiliado</th>
+                            <th>Salario Ordinario</th>
+                            <th>Días Lab.</th>
+                            <th>Horas Lab.</th>
+                            <th>Obs.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12345678</td>
+                            <td>01 DUI</td>
+                            <td>MAX AFP</td>
+                            <td>Carlos Alberto Mendoza Rivas</td>
+                            <td>$465.00</td>
+                            <td>30</td>
+                            <td>8</td>
+                            <td>00</td>
+                        </tr>
+                        <tr>
+                            <td>55667788</td>
+                            <td>01 DUI</td>
+                            <td>MAX AFP</td>
+                            <td>Ricardo Antonio Galeas Merino</td>
+                            <td>$465.00</td>
+                            <td>30</td>
+                            <td>8</td>
+                            <td>00</td>
+                        </tr>
+                        <tr>
+                            <td>66778899</td>
+                            <td>01 DUI</td>
+                            <td>MAX AFP</td>
+                            <td>Elena Margarita Zelaya Escobar</td>
+                            <td>$900.00</td>
+                            <td>30</td>
+                            <td>8</td>
+                            <td>00</td>
+                        </tr>
+                        <tr>
+                            <td>77889900</td>
+                            <td>01 DUI</td>
+                            <td>MAX AFP</td>
+                            <td>Mauricio Ernesto Portillo Lemus</td>
+                            <td>$465.00</td>
+                            <td>30</td>
+                            <td>8</td>
+                            <td>00</td>
+                        </tr>
+                        <tr>
+                            <td>88990011</td>
+                            <td>01 DUI</td>
+                            <td>MAX AFP</td>
+                            <td>Sandra Elizabeth Villalta Ayala</td>
+                            <td>$510.00</td>
+                            <td>30</td>
+                            <td>8</td>
+                            <td>00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <p style="font-size: 0.85rem; color: var(--texto-suave); font-weight: 300; margin-bottom: 15px;">Formato técnico estructurado bajo requerimientos de Planilla Única (Versión Beta 0.8).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="direccion">
         <div class="container">
             <h2 class="section-title">Dirección General & Talento Humano</h2>
             
@@ -921,4 +1042,4 @@
     </footer>
 
 </body>
-</html>
+    </html>
